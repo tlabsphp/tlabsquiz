@@ -1,0 +1,275 @@
+@CHARSET "ISO-8859-1";
+/* css setings for login page*/
+
+/**************For body Style *****************/
+
+body{
+	
+	width:auto;
+	height:auto;
+	margin:1px;
+	padding:2px;
+	
+	
+	
+	
+}
+
+#box{
+	width:auto;
+	height:600px;
+	margin:1px;
+	padding-left:35%;
+	padding-right:35%;
+	background-color: seashell;
+	
+	
+}
+/**************For Header Style *****************/
+
+#header{
+	margin:auto;
+	padding:20px;
+	border-radius: 3px 3px 3px 3px;
+	height: 70px;
+	background-color: #E6E6E6;
+    text-align: center;
+
+}
+
+/************************** css for login page start ******************/
+.loginform-in {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D6E5F5;
+    border-radius: 3px 3px 3px 3px;
+    height: 345px;
+    margin: auto;
+    padding: 0;
+    width: 460px;
+}
+
+.loginform-in fieldset {
+    border-bottom: 1px solid #EFEFEF;
+    margin: 20px auto;
+    padding: 0 0 10px;
+    width: 87%;
+}
+
+.loginbutton {
+    background: -moz-linear-gradient(center top , #F1F1F1, #E0E0E0) repeat scroll 0 0 transparent;
+    border: 1px solid #A7A7A7;
+    border-radius: 3px 3px 3px 3px;
+    color: #444444;
+    cursor: pointer;
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-weight: normal;
+    height: 29px;
+    letter-spacing: 1px;
+    width: 92px;
+}
+
+.loginform-in fieldset label {
+    color: #7D7D7D;
+    float: left;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0 0;
+    width: 140px;
+}
+
+.loginform-in fieldset input[type="text"], input[type="password"], fieldset select {
+    border: 1px solid #CBC7C5;
+    border-radius: 3px 3px 3px 3px;
+    float: left;
+    height: 33px;
+    padding: 1px 1px 1px 3px;
+    width: 250px;
+}
+
+#main{
+	width:960%;
+	margin:50px auto;
+	font-family:verdana;
+}
+
+span{
+	color:red;
+}
+
+h2{
+	background-color:#FEFFED;
+	text-align:center;
+	border-radius:10px 10px 0 0;
+	margin:10px -40px;
+	padding:15px;
+}
+
+#login{
+	width:300px;
+	float:left;
+	border-radius:10px;
+	font-family:verdana;
+	border: 2px solid #CCC;
+	padding:10px 40px 25px;
+	margin-top:70px;
+}
+input[type=text], input[type=password]{
+	width:99.5%;
+	padding:10px;
+	margin-top:8px;
+	border:1px solid #ccc;
+	padding-left:5px;
+	font-size:16px;
+	
+}
+input[type=submit]{
+	width:48%;
+	background-color:#rgba(65, 39, 206, 0.62);
+	color:#131212;
+	cursor:pointer;
+	border-radius:5px;
+	margin-bottom:15px;
+	margin-top:10px;
+	
+	
+}
+input[type=reset]{
+	width:48%;
+	background-color:#rgba(65, 39, 206, 0.62);
+	color:#131212;
+	cursor:pointer;
+	border-radius:5px;
+	margin-bottom:15px;
+	margin-top:10px;
+}
+input[type=button]{
+	width:48%;
+	background-color:#rgba(65, 39, 206, 0.62);
+	color:#131212;
+	cursor:pointer;
+	border-radius:5px;
+	margin-bottom:15px;
+	margin-top:10px;
+}
+/************************** css for login page ends ******************/
+
+.td_title{
+	width:200px;
+	
+}
+#profile{
+	padding:50px;
+	border:1px dashed grey;
+	font-size:20px;
+	background-color:#DCE6F7;
+	height:800px;
+
+}
+
+#footer{
+	padding: 1%;
+	border-radius:5px;
+	height:30px;
+	border:1px;
+	text-align:center;
+	background-color: ghostwhite;
+	
+}
+
+/*********** CSS for Dashboard.php starts ************************/
+
+#menu{
+	padding:2px;
+	margin:10px;
+	font-size:20px;
+	float:left;
+	width:300px;
+}
+
+
+#container{
+	
+	padding: 2%;
+	margin:10px;
+	width:auto;
+	height:600px;
+	overflow:none;
+	border:2px solid gray;
+	
+	
+	
+}
+#container #sidebar{
+	padding-right:0%;
+	padding-left:0%;
+	float:left;
+	width:20%;
+	border:2px solid gray;
+	height:300px;
+	
+}
+#container #content{
+	padding-right:0px;
+	padding-left:0px;
+	font-size:20px;
+	width:75%;
+	height:300px;
+	float:right;
+	border:2px solid gray;
+}
+#logout{
+	
+	padding:5px;
+	text-decoration:none;
+	text-align:left;
+	
+}
+
+#logout #l{
+	float:right;
+	text-decoration:none;
+	padding:5px;
+	
+	
+}
+#logout #u{
+	text-decoration:none;
+	color:#6495ed;
+	float:left;
+}
+a{
+	text-decoration:none;
+	color:#6495ed;
+}
+/*********** CSS for Dashboard.php ends ************************/
+
+/********* CSS for form design ***************/
+.add_form{
+	width:300px;
+	float:left;
+	font-family:verdana;
+	padding:10px 40px 25px;
+	margin-top:1px;
+	display:none;
+	
+}
+.add_que_form{
+	width:300px;
+	float:left;
+	font-family:verdana;
+	padding:10px 40px 25px;
+	margin-top:1px;
+	display:none;
+}
+
+ /********* css for register form *********/
+ .reg_frm{
+	 
+	 width:200px;
+	 height:20px;
+ }
+ .reg_frm #regbtn{
+	 width:120px;
+ }
