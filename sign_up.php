@@ -18,8 +18,8 @@
   <section id="box">
 		<table>
 			<form action="admin/function.php" method="post">
-					
-					<tr><td class="reg_frm">Name </td><td><input id="sname" type="text" name="sname" /></td><td><span id="error"></span></td></tr>
+					<!---this is the sign up page. --->
+					<tr><td class="reg_frm">Name </td><td><input id="sname" type="text" name="sname" /></td><td><span id="sname" value=></span></td></tr>
 					<tr><td class="reg_frm">Email id</td><td><input type="text" name="semail" /></td></tr>
 					<tr><td class="reg_frm">Contact No.</td><td><input type="text" name="scontact" /></td></tr>
 					<tr><td class="reg_frm">Degree</td><td>
@@ -52,7 +52,7 @@
 			document.getElementById("error").value="Name must be filled out";
 			return false;
 		}
-	return false;
+
 	}
 </script>
 </body>
