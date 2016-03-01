@@ -1,32 +1,47 @@
 <?php
   session_start();
+  include("header.php");
 ?>
-<html>
-<head>
-  <title>
-    Quiz Bank
-  </title>
-        <link rel="stylesheet" type="text/css" href="css/style.css" /> 
-		<script type="text/javascript" src="js/jquery.js"></script>		 
-</head>
-<body>
-  <header>
-	<div id="header">
-    <h3>Welcome to online quiz system !!</h3>
-	<div id="logout"><?php echo $_SESSION['login_user']; ?> <a href="index.php">Log out</a> </div>
-	</div>
-  </header>
+
   <section id="box">
-	<div>
+	<div class="select_tech">
+		<h3>
+			Select the technology on which you want to give online test. <br />
+			please read the below instruction carefully.
+		</h3>
+		
+			<!-- filled the select option from technology table using mysql query-->
+		<div>
+		<form>
+		<?php
+				include ("config.php");
+				$qry = "Select tech_name from technology";
+				$res=mysqli_query($con,$qry) or die("Invalid Query");
+				?>	
+				<select id="lang" name="tech" onchange="showUser(this.value)">
+				<option value="">Select Technology </option>
+				<?php
+					while($result = mysqli_fetch_array($res)){
+						echo "<option value=" . $result['tech_id'] . ">" . $result['tech_name'] . "</option>";
+					}
+					echo "</select>";
+				?>
+				<br>
+				
+			</form>
+		</div>
+	</div>    
+		<div id="txtHint">
+		</div>
+	<div class="instruction">
+		<ul>
+			<li> Each test have  times of 30 minutes only.</li>
+			<li> There is negative marking for each wrong answer.</li>
 			
-	</div>              
+			
+		</ul>
+	</div>
   </section>
-  <div id="footer">
-		 Copy rights Reserved.
-		 <?php
-			
-		 
-		 ?>
-  </div>
-</body>
-</html>
+ <?php
+	include("footer.php");
+ ?>

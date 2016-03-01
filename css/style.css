@@ -224,20 +224,19 @@ input[type=button]{
 	padding:5px;
 	text-decoration:none;
 	text-align:left;
-	
+	height:40px;
 }
 
 #logout #l{
 	float:right;
 	text-decoration:none;
 	padding:5px;
-	
-	
 }
 #logout #u{
 	text-decoration:none;
 	color:#6495ed;
 	float:left;
+	padding:5px;
 }
 a{
 	text-decoration:none;
@@ -272,4 +271,20 @@ a{
  }
  .reg_frm #regbtn{
 	 width:120px;
+ }
+ .select_tech{
+	    padding: 30px;
+    width: inherit;
+    overflow: hidden;
+    width: 700px;
+ }
+ .select_tech select{
+	 width: auto;
+    height: 28px;
+    font-size: inherit;
+ }
+ .select_tech #btn{
+	width:100px;
+    height: 28px;
+    font-size: inherit;
  }

@@ -6,80 +6,55 @@ function show1(){
     $("#btn_tech").click(function(){
         $("#display_tech").show();
     });
-};
+}
 
 function show(){
     $("#btn_que").click(function(){
         $("#display_que").show();
     });
 	
-};
-function aclick(){
-	alert(document.loginid.name);
 }
-
-function prepage(){
-	alert("hi");
+function validateEmail(field){
+		var emailid=document.getElementById(field).value;
+		atpos = emailid.indexOf("@");
+		dotpos = emailid.lastIndexOf(".");
+		if(atpos < 1 || (dotpos-atpos < 2 )){
+			error="Please Correct Email id";
+			document.getElementById(field).focus();
+			return false;
+		}
+		return true;
+}
+function validate_all(){
+	
+	function updatelength(field, output){
+		curr_length = document.getElementById(field).value.length;
+		field_mlen = document.getElementById(field).maxLength;
+		document.getElementById(output).innerHTML = curr_length+'/'+field_mlen;
+		return 1;
+	}
+	
 	
 }
-function validation(){
-	 var x = document.forms["myForm"]["fname"].value;
-    if (x == null || x == "") {
-        alert("Name must be filled out");
-        return false;
+// ******* AJAX CODE FOR TECHNOLOGY CONTENT ********************
+
+function showUser(str) {
+  if (str=="") {
+    document.getElementById("txtHint").innerHTML="";
+    return;
+  } 
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
     }
-
-	
-}
-// ******* AJAX CODE FOR DIV CONTENT ********************
-function createRequestObject() 
-{
-	var returnObj = false;
-	
-    if(window.XMLHttpRequest) {
-        returnObj = new XMLHttpRequest();
-    } else if(window.ActiveXObject) {
-		try {
-			returnObj = new ActiveXObject("Msxml2.XMLHTTP");
-
-			} catch (e) {
-			try {
-			returnObj = new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			catch (e) {}
-			}
-			
-    }
-	return returnObj;
-}
-
-var http = createRequestObject();
-var target;
-
-// This is the function to call, give it the script file you want to run and
-// the div you want it to output to.
-function sendRequest(scriptFile, targetElement)
-{	
-	target = targetElement;
-	try{
-	http.open('get', scriptFile, true);
-	}
-	catch (e){
-	document.getElementById(target).innerHTML = e;
-	return;
-	}
-	http.onreadystatechange = handleResponse;
-	http.send();	
-}
-
-function handleResponse()
-{	
-	if(http.readyState == 4) {		
-	try{
-		var strResponse = http.responseText;
-		document.getElementById(target).innerHTML = strResponse;
-		} catch (e){
-		document.getElementById(target).innerHTML = e;
-		}	
-	}
+  }
+  alert(str);
+  xmlhttp.open("GET","exam.php?q="+str,true);
+  xmlhttp.send();
 }
