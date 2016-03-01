@@ -1,5 +1,5 @@
 <?php
-  
+  #just commented for the sake of comment
   require_once('config.php');
   $error="";
   if(isset($_POST['login'])){
