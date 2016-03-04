@@ -20,7 +20,10 @@
 	</div>
   </header>
   <section id="box">
-    <div id="login">
+  <div style="width:60%;margin:auto">
+    <div style="width:60%;margin:auto">
+	<div id="login">
+		
 		<h2>Login Form</h2>
 		<form action="" method="post" name="loginfrm"> 
 			<label>Username : </label>
@@ -29,14 +32,15 @@
 			<input id="password" name="password" id="password" placeholder="*****" type="password" size="30" />
 			<br />
 			<div> <input type="submit" name="login" value="Login" id="loginbutton" />
-			<input type="reset" name="reset" value="Reset" id="" />
+			<input type="reset" name="reset" value="Reset" id="" /></div>
 			<div> <a href="sign_up.php"> New Registration</a>
 			</div>
 			<div> <span> <?php echo $error; ?></span></div>
 			
 		</form>
+		</div>
 	</div>
-	
+	</div>
               
   </section>
   <div id="footer">

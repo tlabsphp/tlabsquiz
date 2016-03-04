@@ -16,12 +16,11 @@ body{
 }
 
 #box{
-	width:auto;
-	height:600px;
-	margin:1px;
-	padding-left:35%;
-	padding-right:35%;
-	background-color: seashell;
+	width: auto;
+height: 600px;
+margin: auto;
+padding-left: 10px;
+background-color: seashell;
 	
 	
 }
@@ -275,7 +274,7 @@ a{
  .select_tech{
 	    padding: 30px;
     width: inherit;
-    overflow: hidden;
+    overflow: auto;
     width: 700px;
  }
  .select_tech select{
@@ -288,3 +287,30 @@ a{
     height: 28px;
     font-size: inherit;
  }
+ /***************************** CSS for load question form *******************/
+ .que_box{
+	width:auto;
+	height:600px;
+	margin:1px;
+	padding-left:5%;
+	padding-right:5%;
+	background-color: seashell;
+	 
+ }
+ .que_box #que_box_btn {
+	width:auto;
+	height:100px;
+ 
+	 
+ } 
+ .que_box #que_box_btn #gen_test, #exit_test{
+	
+	background-color: #rgba(65, 39, 206, 0.62);
+	color: #131212;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	width:auto;
+ }
+ 

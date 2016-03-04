@@ -24,13 +24,12 @@
               if($row['check_user']=='true'){
                 $_SESSION['login_user']=$row['username'];
                 header("Location:admin/dashboard.php");
+				
               }
               else{
                 $_SESSION['login_user']=$row['username'];
                 header("Location:dashboard.php");
-              }
-              
-
+              }              
           }
           else{
                 $error="Invalid username and password";

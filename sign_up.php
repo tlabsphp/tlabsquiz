@@ -26,7 +26,7 @@
 					<tr><td class="reg_frm">Username</td><td><input type="text" name="suname" id="username" /></td>
 						<td><span id="error_username"></span></td>
 					</tr>
-					<tr><td class="reg_frm">Password</td><td><input type="text" name="spwd" id="pass" /></td>
+					<tr><td class="reg_frm">Password</td><td><input type="password" name="spwd" id="pass" /></td>
 						<td><span id="error_pwd"></span></td>
 					</tr>
 					<tr><td colspan=4 class="reg_frm" ><input type="submit" name="sbtn" value="Submit" id="regbtn" />
