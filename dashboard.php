@@ -1,15 +1,8 @@
- <script type = "text/javascript">
-    window.onload = function () {
-        document.onkeydown = function (e) {
-            return (e.which || e.keyCode) != 116;
-        };
-    }
-</script>
+
 <?php
 	// session and header file inclueded here
   include ("session.php");
-  include("header.php");
-	
+  include("header.php");	
  ?>
   <section id="box">
   <div style="width:60%;margin:auto">
